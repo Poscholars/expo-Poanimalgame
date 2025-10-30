@@ -1,0 +1,9 @@
+{
+  "platforms": ["apple", "android", "web"],
+  "apple": {
+    "modules": ["DecryptionmoduleModule"]
+  },
+  "android": {
+    "modules": ["expo.modules.decryptionmodule.DecryptionmoduleModule"]
+  }
+}

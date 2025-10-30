@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "expo-Poanimalgame",
-    "slug": "expo-Poanimalgame",
+    "name": "Animal Game",
+    "slug": "animal-game",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/animal.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
@@ -13,18 +13,86 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "appleTeamId": "G6GJWHSR92",
+      "bundleIdentifier": "com.poanimalgame",
+      "googleServicesFile": "./GoogleService-Info.plist"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/animal.png",
         "backgroundColor": "#ffffff"
       },
+      "googleServicesFile": "./google-services.json",
       "edgeToEdgeEnabled": true,
+      "package": "com.poanimalgame",
       "predictiveBackGestureEnabled": false
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "@react-native-firebase/app",
+      "@react-native-firebase/crashlytics",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash.png",
+          "imageWidth": 170,
+          "resizeMode": "contain",
+          "backgroundColor": "#FFF"
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "kotlinVersion": "2.1.20",
+            "packagingOptions": {
+              "pickFirst": [
+                "**/libc++_shared.so"
+              ]
+            },
+            "enableProguardInReleaseBuilds": true,
+            "extraProguardRules": "-keep class com.swmansion.reanimated.** { *; }\n-keep class com.facebook.react.turbomodule.** { *; }\n-keep class com.google.firebase.** { *; }\n-dontwarn com.firebase.**\n-keep class com.google.android.gms.internal.consent_sdk.** { *; }\n-keep class com.google.android.gms.ads.** { *; }\n-keep class io.invertase.googlemobileads.** { *; }\n-keep class io.invertase.firebase.** { *; }\n-dontwarn io.invertase.firebase.**\n-keep class io.realm.** { *; }\n-dontwarn io.realm.**\n-keep public class com.dylanvann.fastimage.* {*;}\n-keep public class * implements com.bumptech.glide.module.GlideModule\n-keep public class * extends com.bumptech.glide.module.AppGlideModule\n-keep class com.nozbe.watermelondb.** { *; }\n-dontwarn com.nozbe.watermelondb.**",
+            "enableShrinkResourceslnReleaseBuilds": true,
+            "useLegacyPackaging": true,
+            "enableMinifyInReleaseBuilds": true
+          },
+          "ios": {
+            "useFrameworks": "static",
+            "buildReactNativeFromSource": true
+          }
+        }
+      ],
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-7467526896400501~4157079699",
+          "android_app_id": "ca-app-pub-7467526896400501~4157079699",
+          "iosAppId": "ca-app-pub-3940256099942544~3347511713",
+          "skAdNetworkItems": [
+            "cstr6suwn9.skadnetwork",
+            "4fzdc2evr5.skadnetwork",
+            "4pfyvq9l8r.skadnetwork",
+            "2fnua5tdw4.skadnetwork"
+          ]
+        }
+      ],
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./src/assets/fonts/NunitoSans-Regular.ttf",
+            "./src/assets/fonts/NunitoSans-Bold.ttf",
+            "./src/assets/fonts/NunitoSans-Light.ttf"
+          ]
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
     }
   }
 }

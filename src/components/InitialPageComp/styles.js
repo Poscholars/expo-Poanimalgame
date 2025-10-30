@@ -1,0 +1,70 @@
+import { Dimensions } from "react-native";
+import { ScaledSheet} from "react-native-size-matters";
+
+export default ScaledSheet.create({
+    container:{
+        flex:1
+    },
+    footborder:{
+        height:"80@ms",
+        width:"80@ms"
+    },
+    body:{
+        flex:1,
+        alignItems:"center",
+        justifyContent:"space-around"
+    },
+    buttonholder:{
+        flexDirection:"row",
+        width:"100%",
+        justifyContent:"space-between",
+        paddingHorizontal:"7%"
+    },
+    writeup:{
+        fontSize:"22@ms",
+        color:"#242424",
+        paddingLeft:"20@s",
+        paddingTop:"20@s",
+        fontFamily:"NunitoSans-Regular"
+    },
+    comma:{
+        fontSize:"22@ms",
+        color:"#242424",
+        paddingLeft:"5@s",
+        paddingTop:"20@s"
+    },
+    downtext:{
+        fontSize:"22@ms",
+        color:"#242424",
+        paddingHorizontal:"20@s",
+        paddingBottom:"50@s",
+        paddingTop:"20@s",
+        fontFamily:"NunitoSans-Regular"
+    },
+    input:{
+        height:'40@ms',
+        width:"50%",
+        color:"black",
+        fontSize:'20@ms',
+        marginLeft:"15@ms",
+        marginBottom:0,
+        paddingBottom:"0.5@ms",
+        borderBottomWidth:1,
+        borderBottomColor:"#006838",
+        fontFamily:"NunitoSans-Light"
+    },
+    inputwrapper:{
+        flexDirection:"row",
+        alignItems:"center",
+    },
+    scrollstyle:{
+        justifyContent:"space-evenly",
+        height:Dimensions.get('window').height*0.85
+    },
+    error:{
+        color:"red",
+        marginLeft:'60@s',
+        paddingRight:"20@ms"
+    }
+
+})

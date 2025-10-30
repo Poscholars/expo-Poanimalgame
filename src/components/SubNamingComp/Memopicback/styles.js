@@ -1,0 +1,15 @@
+import { ScaledSheet} from "react-native-size-matters";
+
+export default ScaledSheet.create({
+    backimage:{
+        width:"100%",
+        height:"100%",
+        justifyContent:"center",
+        alignItems:"center",
+    },
+    text:{
+        fontSize:"18@ms",
+        padding:"2@ms"
+    }
+
+})

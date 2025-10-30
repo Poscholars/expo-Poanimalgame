@@ -1,0 +1,1 @@
+export default ['#daa520','#b27427']

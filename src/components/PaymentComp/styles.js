@@ -1,0 +1,206 @@
+import {Dimensions, StyleSheet} from 'react-native'
+import { ScaledSheet } from 'react-native-size-matters'
+
+export default ScaledSheet.create({
+    container:{
+        flex:1,
+    },
+    viewone:{
+        flex:1.2,
+        borderWidth:1,
+        borderColor:"#b27427",
+        marginHorizontal:'15@s',
+        marginTop:'10@s',
+        marginBottom:'10@s',
+        borderRadius:'10@s',
+        justifyContent:"space-evenly"
+    },
+    viewtwo:{
+        flex:1.1,
+        borderWidth:1,
+        borderColor:"#b27427",
+        marginHorizontal:15,
+        marginTop:'20@ms',
+        marginBottom:'15@ms',
+        borderRadius:'10@ms',
+        justifyContent:"space-evenly"
+
+    },
+    notice:{
+        color:"#ed1c24",
+        fontSize:'16@s',
+        fontWeight:"bold",
+        marginLeft:'15@ms',
+        fontFamily:"NunitoSans-Bold"
+    },
+    fwriteup:{
+       alignSelf:"center",
+       fontSize:'15@s',
+       marginHorizontal:'8@ms',
+       marginTop:'3@s',
+       fontFamily:"NunitoSans-Regular"
+    },
+    inner:{
+        fontWeight:"bold",
+        fontFamily:"NunitoSans-Bold"
+    },
+    signButton:{
+        justifyContent:"center",
+        alignItems:"center",
+        width: '155@s',
+        height:'40@s',
+        alignSelf:"center",
+        borderWidth:1,
+        borderRadius:5,
+        borderColor:"#b27427",
+        marginTop:"12@s"
+
+    },
+    signupb:{
+        fontSize:'18@ms',
+        color:"#ff0000",
+        fontWeight:"bold",
+        fontFamily:"NunitoSans-Bold"
+    },
+    text2:{
+        marginVertical:'8@ms',
+        marginHorizontal:'8@ms',
+        fontSize:'15@ms',
+        alignSelf:"center",
+        fontFamily:"NunitoSans-Regular"
+
+    },
+    fluButton:{
+        width:"85%",
+        height:"42@ms",
+        backgroundColor:"#ff5b00",
+        justifyContent:"center",
+        alignItems:"center",
+        alignSelf:"center",
+        borderRadius:8
+    },
+    paytext:{
+        fontSize:'14@s',
+        color:"white",
+        fontWeight:"bold",
+        fontFamily:"NunitoSans-Bold"
+    },
+    terms:{
+        alignSelf:"center"
+    },
+    termstext:{
+        fontSize:'14@s',
+        borderBottomWidth:1,
+        borderColor:"#b27427",
+        color:"#b27427",
+        fontFamily:"NunitoSans-Regular"
+    },
+    toptext:{
+        fontSize:'20@ms',
+        color:"red",
+        fontWeight:"bold",
+    },
+    quizmodewrapper:{
+        borderWidth: 1,
+        paddingHorizontal: '4@ms',
+        paddingVertical:'4@ms',
+        borderRadius: 4,
+        marginTop: '20@ms',
+        borderColor: "blue",
+        marginBottom: '5@ms',
+    },
+    quizmodeText:{
+        fontSize: '20@ms',
+        alignSelf:"center",
+        color:'blue',
+    },
+    signbutton:{
+        alignSelf:"center",
+        width:'90@ms',
+        height:'40@ms',
+        borderRadius:20,
+        backgroundColor:"blue",
+        alignItems:"center",
+        justifyContent:"center",
+        marginTop:'12@ms',
+        backgroundColor:'purple',
+    },
+    signup:{
+        fontSize:'18@ms',
+        color:"white",
+        fontWeight:"bold",
+    },
+    form:{
+       padding:"12@s"
+    },
+    modal:{
+        width:"88%",
+    },
+    modal2:{
+        backgroundColor: 'rgba(0,0,0,0.7)',
+        flex:1,
+        justifyContent:'center',
+        alignItems:'center',  
+    },
+    modalLayout:{
+        backgroundColor:'white', 
+        width:"15%", 
+        borderRadius:4,
+        justifyContent:"space-between",
+        alignItems:"center",
+    },
+    modal3:{
+        backgroundColor: 'rgba(0,0,0,0.7)',
+        flex:1,
+        justifyContent:'center',
+        alignItems:'center',  
+    },
+    modalLayout3:{
+        backgroundColor:'white', 
+        width:"85%", 
+        height:"37%",
+        borderRadius:4,
+        justifyContent:"space-between",
+        alignItems:"center",
+    },
+    price:{
+        marginTop:"10@s",
+        marginBottom:"12@s"
+    },
+    pricetext:{
+        fontSize:'17@s',
+        fontWeight:"bold"
+    },
+    info:{
+        alignSelf:"flex-start",
+        marginHorizontal:'12@s',
+        marginBottom:"12@s"
+    },
+    infotext:{
+        fontSize:'15@s',
+       
+    },
+    viewinfo:{
+        paddingHorizontal:'9@s',
+        marginBottom:"12@s"
+    },
+    viewinfo1:{
+        paddingHorizontal:'19@s'
+    },
+    buttonset:{
+        marginBottom:'12@s',
+        alignSelf:"flex-end",
+        marginRight:'35@s'
+    },
+    buttontext:{
+        fontSize:'19@s',
+        fontWeight:"bold",
+        color:"#ff8500"
+    },
+    smallimage:{
+        height:"20@ms",
+        width:"20@ms",
+        marginRight:"10@ms",
+        marginLeft:"5@ms"
+    }
+})

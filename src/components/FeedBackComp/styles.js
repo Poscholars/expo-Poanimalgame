@@ -1,0 +1,79 @@
+import { Dimensions } from "react-native";
+import { ScaledSheet} from "react-native-size-matters/extend";
+
+export default ScaledSheet.create({
+    container:{
+        flex:1,
+        alignItems:"center"
+    },
+    top:{
+        flex:1,
+        justifyContent:"center",
+        alignItems:"center",
+        //borderBottomWidth:1,
+        borderColor:"black",
+        width:"90%"
+    },
+    bottom:{
+        flex:2,
+      //  justifyContent:"space-evenly",
+        alignItems:"center"
+ 
+    },
+    reachtext:{
+        alignSelf:"center",
+        fontSize:"25@ms",
+        fontWeight:"bold",
+        marginBottom:"15@ms"
+    },
+    reachtext2:{
+        alignSelf:"center",
+        fontSize:"25@ms",
+        fontWeight:"bold",
+        //marginTop:"20@ms"
+    },
+    icon:{
+        width:"30@ms",
+        height:"30@ms",
+        paddingLeft:"10@ms"
+    },
+    logoImage:{
+        width:"70@ms",
+        height:"70@ms",
+    },
+    socialholder:{
+        flexDirection:"row",
+        alignItems:"center",
+        marginVertical:"6@ms"
+    },
+    holder:{
+        marginBottom:"5@ms",
+    },
+    text:{
+        fontSize:"18@ms",
+        marginLeft:"10@ms",
+        borderBottomWidth:"1@s",
+        borderBottomColor:"black"
+    },
+    name:{
+        fontSize:"20@ms",
+        paddingTop:"10@ms",
+    },
+    bottombuttonholder:{
+        marginTop:'15@ms',
+        flexDirection:"row",
+        justifyContent:"space-around",
+        width:"60%"
+    },
+    line:{
+        width:"500@ms",
+        height:"1@ms",
+        marginBottom:"20@ms", 
+    },
+    line2:{
+        marginTop:"30@ms",
+        width:"500@ms",
+        height:"1@ms",
+        marginBottom:"10@ms" 
+    }
+})
